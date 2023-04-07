@@ -23,3 +23,21 @@
 .user-detail p{
     color: #707070;
 }
+.add-break{
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add-break p{
+    background-color: #ececec;
+    padding: 8px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+.add-break p:hover{
+    background-color: #4e2772;
+    color: white;
+}

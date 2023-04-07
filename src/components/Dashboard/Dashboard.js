@@ -23,6 +23,15 @@ const Dashboard = () => {
                         <p>Age</p>
                     </span>
                 </div>
+                <div>
+                    <h4>Add a Break</h4>
+                    <div className='add-break'>
+                        <p>10</p>
+                        <p>10</p>
+                        <p>10</p>
+                        <p>10</p>
+                    </div>
+                </div>
             </div>
         </div>
     );
