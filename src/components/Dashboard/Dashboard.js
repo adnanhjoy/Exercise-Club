@@ -7,12 +7,15 @@ const Dashboard = ({detail}) => {
         <div>
             <div className='dashboard'>
                 <div className="user">
-                <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" />
-                <h4>Adnan Hossain</h4>
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" />
+                    <span className='user-info'>
+                        <h4>Adnan Hossain</h4>
+                        <p>Dhaka, Bangladesh</p>
+                    </span>
                 </div>
                 <div className='user-detail'>
                     <span>
-                        <h2>75 <small>kg</small></h2>
+                        <h2>75 <small className='kg'>kg</small></h2>
                         <p>Weight</p>
                     </span>
                     <span>
