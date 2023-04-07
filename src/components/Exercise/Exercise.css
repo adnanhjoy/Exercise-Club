@@ -1,0 +1,23 @@
+.exercise{
+    border: 1px solid #b8b6b6;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px #e0dfdf;
+    padding: 10px;
+}
+.exercise img{
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+}
+.exercise p{
+    margin: 5px 0;
+}
+.detail{
+    color: #707070;
+}
+.age{
+    font-weight: 600;
+}
+.time{
+    font-weight: 600;
+}
