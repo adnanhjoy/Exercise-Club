@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Dashboard.css';
 import Details from '../Details/Details';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 const Dashboard = ({detail}) => {
+    const [breakTime, setBreaktime] = useState(0)
+    
+    const breakTimeBtn = (num) => {
+        setBreaktime(num)
+    }
     return (
         <div>
             <div className='dashboard'>
@@ -35,13 +40,14 @@ const Dashboard = ({detail}) => {
                 <div>
                     <h4>Add a Break</h4>
                     <div className='add-break'>
-                        <p>10</p>
-                        <p>10</p>
-                        <p>10</p>
-                        <p>10</p>
+                        <p onClick={() => breakTimeBtn(25)}>25</p>
+                        <p onClick={() => breakTimeBtn(20)}>20</p>
+                        <p onClick={() => breakTimeBtn(40)}>40</p>
+                        <p onClick={() => breakTimeBtn(15)}>15</p>
+                        <p onClick={() => breakTimeBtn(30)}>30</p>
                     </div>
                 </div>
-                <Details details={detail}></Details>
+                <Details details={detail} breakTime={breakTime}></Details>
             </div>
         </div>
     );
