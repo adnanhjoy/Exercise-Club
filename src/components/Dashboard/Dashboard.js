@@ -1,14 +1,26 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Dashboard.css';
 import Details from '../Details/Details';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { addBreakTime, getBreakTime } from '../../utilities/storage';
 
 const Dashboard = ({detail}) => {
-    const [breakTime, setBreaktime] = useState(0)
+    const [breakTime, setBreaktime] = useState(0);
+
+    useEffect(() => {
+        const storBreakTime = getBreakTime();
+        let savedBreakTime = 0;
+        for(const breaktime in storBreakTime){
+            // const addBreak = breakTime.find(newTime => newTime === breaktime);
+            savedBreakTime = breaktime;
+        }
+        setBreaktime(savedBreakTime)
+    }, [breakTime])
     
     const breakTimeBtn = (num) => {
-        setBreaktime(num)
+        setBreaktime(num);
+        addBreakTime(num);
     }
     return (
         <div>
