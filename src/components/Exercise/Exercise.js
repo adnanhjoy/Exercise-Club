@@ -10,7 +10,7 @@ const Exercise = (props) => {
             <p className='detail'>{detail.slice(0,60)}</p>
             <p className='age'>For Age: {age}</p>
             <p className='time'>Time required: {time}</p>
-            <button>Add to list</button>
+            <button className='add-to-list'>Add to list</button>
         </div>
     );
 };

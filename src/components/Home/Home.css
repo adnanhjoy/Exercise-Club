@@ -4,8 +4,7 @@
 }
 .exercise-container{
     width: 80%;
-    margin: auto;
-    margin-top: 5%;
+    margin:5% auto;
 }
 .exercises{
     display: grid;
