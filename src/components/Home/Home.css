@@ -17,6 +17,9 @@
 }
 
 @media screen and (max-width: 576px) {
+    .home-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
     .exercises{
         grid-template-columns: repeat(1, 1fr);
     }
