@@ -1,0 +1,25 @@
+.dashboard img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user-detail{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.user-detail h2, p{
+    margin: 0;
+}
+.user-detail p{
+    color: #707070;
+}

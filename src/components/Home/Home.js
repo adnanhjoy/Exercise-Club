@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import Exercise from '../Exercise/Exercise';
+import Dashboard from '../Dashboard/Dashboard';
 
 const Home = () => {
     const [exercises, setExercise] = useState([]);
@@ -23,8 +24,8 @@ const Home = () => {
             }
             </div>
             </div>
-            <div>
-                <h1>User</h1>
+            <div className='dashboadr-container'>
+                <Dashboard></Dashboard>
             </div>
         </div>
     );
