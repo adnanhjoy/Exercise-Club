@@ -8,11 +8,16 @@
     display: flex;
     align-items: center;
 }
-.user-info h4{
+.user h4{
     margin: 0;
 }
-.user-info p{
+.user-info {
     color: #707070;
+    display: flex;
+    align-items: center;
+}
+.user-info p{
+    margin-left: 5px;
 }
 .user-detail{
     background-color: white;
