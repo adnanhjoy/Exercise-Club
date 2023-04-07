@@ -2,7 +2,7 @@ import React from 'react';
 import './Dashboard.css';
 import Details from '../Details/Details';
 
-const Dashboard = () => {
+const Dashboard = ({detail}) => {
     return (
         <div>
             <div className='dashboard'>
@@ -33,7 +33,7 @@ const Dashboard = () => {
                         <p>10</p>
                     </div>
                 </div>
-                <Details></Details>
+                <Details details={detail}></Details>
             </div>
         </div>
     );

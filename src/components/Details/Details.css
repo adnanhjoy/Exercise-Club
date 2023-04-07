@@ -3,7 +3,13 @@
     margin-bottom: 10px;
     padding: 20px 10px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .exercise-time p{
     font-weight: bold;
+}
+.set-time{
+    margin-right: 20px;
 }

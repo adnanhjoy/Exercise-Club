@@ -5,11 +5,16 @@ import Dashboard from '../Dashboard/Dashboard';
 
 const Home = () => {
     const [exercises, setExercise] = useState([]);
+    const [detail, setDetail] = useState([]);
     useEffect(() => {
         fetch('fakedata.json')
         .then(res => res.json())
         .then(data => setExercise(data))
     },[])
+
+    const addToButton = (exercise) => {
+        setDetail([...detail, exercise])
+    }
     return (
         <div className='home-container'>
             <div className='exercise-container'>
@@ -20,12 +25,13 @@ const Home = () => {
                 exercises.map(exercise => <Exercise 
                     exercise={exercise}
                     key={exercise.id}
+                    addToButton={addToButton}
                     ></Exercise>)
             }
             </div>
             </div>
             <div className='dashboadr-container'>
-                <Dashboard></Dashboard>
+                <Dashboard detail={detail}></Dashboard>
             </div>
         </div>
     );
